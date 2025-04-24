@@ -54,9 +54,13 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="default" size="sm" className="hidden md:flex">
+          <a
+            href="https://github.com/Smartlify07/formbuilder-demo/blob/main/README.md"
+            target="_blank"
+            className="hidden cursor-pointer md:flex bg-neutral-900 rounded-md shadow text-sm text-white font-medium py-2 px-4"
+          >
             Explore Docs
-          </Button>
+          </a>
           <Button
             variant="ghost"
             size="icon"

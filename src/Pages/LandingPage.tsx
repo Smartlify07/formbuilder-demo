@@ -3,6 +3,7 @@ import { DemoSection } from '@/components/Home/DemoSection';
 import { FeaturesSection } from '@/components/Home/Features';
 import { Header } from '@/components/Home/Header';
 import HeroSection from '@/components/Home/HeroSection';
+import { HowToUseSection } from '@/components/Home/HowToUseSection';
 
 export const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ export const LandingPage = () => {
       <FeaturesSection />
       <DemoSection />
       <CodeExamplesSection />
+      <HowToUseSection />
     </main>
   );
 };
