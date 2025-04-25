@@ -122,14 +122,28 @@ export const formElements: ElementsProps[] = [
 ];
 ```
 
+## Create your form state
+
+```tsx
+const [formState, setFormState] = useState<z.infer<typeof formSchema>>({
+  name: '',
+  email: '',
+  company: '',
+  role: '',
+  message: '',
+  newsletter: false,
+});
+```
+
 ## Use the FormBuilder component
 
 ```jsx
 <FormBuilder
-  form={form}
+  formSchema={formSchema}
+  formData={formState}
+  setFormData={setFormState}
+  onSubmit={handleSubmit}
   elements={formElements}
-  onSubmit={onSubmit}
-  className="grid grid-cols-2 gap-4"
 />
 ```
 
@@ -334,3 +348,13 @@ You can customize how checkboxes appear when they are checked using the `data-[s
 - `data-[state=checked]:text-white`: Changes the checkmark color when checked.
 
 You can use this pattern with any Tailwind or custom utility class to fully control the visual state of your checkboxes.
+
+---
+
+## 🚀 Ready to Build Faster Forms?
+
+Skip the repetitive setup and focus on what matters. Our form builder gives you complete flexibility, customizability, and great developer experience out of the box.
+
+👉 **Check out the demo and get started now: [Form Builder Demo](https://formbuilder-demo.vercel.app)**
+
+---
