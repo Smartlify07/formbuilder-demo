@@ -15,7 +15,10 @@ export function CTASection() {
             </p>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row">
-            <a className="inline-flex h-11 bg-neutral-800 text-white rounded-md shadow-sm border items-center justify-center px-8">
+            <a
+              href={GITHUB_REPO}
+              className="inline-flex h-11 bg-neutral-800 text-white rounded-md shadow-sm border items-center justify-center px-8"
+            >
               <Book className="mr-2 h-5 w-5" />
               Explore Docs
             </a>

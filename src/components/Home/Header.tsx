@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { GITHUB_REPO } from '@/lib/constants';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,7 +56,7 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/Smartlify07/formbuilder-demo/blob/main/README.md"
+            href={GITHUB_REPO}
             target="_blank"
             className="hidden cursor-pointer md:flex bg-neutral-900 rounded-md shadow text-sm text-white font-medium py-2 px-4"
           >
