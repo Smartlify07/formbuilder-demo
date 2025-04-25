@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        'sticky top-0 z-50 w-full transition-all duration-200',
+        'sticky top-0 z-50 w-full md:flex items-center justify-center transition-all duration-200',
         isScrolled
           ? 'bg-background/80 backdrop-blur-md border-b'
           : 'bg-transparent'

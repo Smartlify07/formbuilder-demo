@@ -75,7 +75,10 @@ export function DemoSection() {
   };
 
   return (
-    <section id="demo" className="py-20 bg-muted/30">
+    <section
+      id="demo"
+      className="py-20 flex items-center justify-center bg-muted/30"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
